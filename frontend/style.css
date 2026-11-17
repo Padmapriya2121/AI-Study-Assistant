@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5e6d3;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 850px;
+    height: 85vh;
+    background: #fffaf3;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(80, 50, 30, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background: #a66a3f;
+    color: white;
+}
+
+.logo {
+    font-size: 38px;
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+header p {
+    font-size: 14px;
+    color: #f5e5d4;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.message {
+    max-width: 82%;
+    padding: 15px 18px;
+    border-radius: 16px;
+    line-height: 1.7;
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background: #f0dfcc;
+    color: #503725;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: #a66a3f;
+    color: white;
+}
+
+footer {
+    display: flex;
+    gap: 12px;
+    padding: 18px 22px;
+    background: #fffaf3;
+    border-top: 1px solid #ead8c5;
+}
+
+#user-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #c9a486;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    color: #503725;
+}
+
+#user-input:focus {
+    border-color: #a66a3f;
+}
+
+#send-btn {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 12px;
+    background: #a66a3f;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background: #80502f;
+}
+
+#send-btn:disabled {
+    opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        width: 95%;
+        height: 92vh;
+    }
+
+    .message {
+        max-width: 92%;
+    }
+}
