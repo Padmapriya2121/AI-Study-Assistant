@@ -251,20 +251,3 @@ The application was tested with multiple consecutive conversation turns to verif
 \- Context retention across messages.
 
 
-
-\## 👩‍💻 Author
-
-
-
-Padma Priya R
-
-
-
-B.Tech Artificial Intelligence and Data Science
-
-
-
-St. Joseph's College of Engineering
-
-
-
